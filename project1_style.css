@@ -1,0 +1,194 @@
+/* Global Styles */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Poppins", sans-serif;
+}
+html {
+	font-size: 62.5%;
+}
+h1 {
+	font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 4.8rem;
+}
+h3 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+h4,
+h5 {
+	font-size: 2.8rem;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+button {
+	padding: 2rem 6rem;
+	background-color: #4c6e97;
+	border: none;
+	color: white;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.5s
+		ease-in-out;
+}
+button:hover {
+	background-color: #27394e;
+}
+/* Nav Section With Hero */
+.main-head {
+	background-color: #131c27;
+	color: white;
+}
+
+nav {
+	min-height: 10vh;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
+}
+nav ul {
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+#logo {
+	flex: 2 1 40rem;
+	font-family: "Pattaya", sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+.hero {
+	min-height: 90vh;
+	background-image: linear-gradient(
+			rgb(0, 0, 0, 0.5),
+			transparent
+		),
+		url(mountain_waterfall.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-shadow: 3px 3px 10px black;
+}
+
+.hero h3 {
+	padding: 3rem;
+}
+/* Benefits section */
+.locations {
+	min-height: 100vh;
+	background-image: linear-gradient(
+			rgb(0, 0, 0, 0.5),
+			transparent
+		),
+		url(city-cut.png);
+	/* background-size: cover; */
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+}
+.locations-head {
+	width: 90%;
+	margin: auto;
+	text-shadow: 0.5px 0.5px 4px
+		rgb(207, 205, 206);
+}
+.locations-head h2 {
+	padding: 1rem 0rem;
+	text-decoration: underline;
+	text-decoration-thickness: 0.5rem;
+}
+.locations-head h3 {
+	padding: 4rem 0rem;
+}
+.cloud {
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	width: 50%;
+	height: 60%;
+}
+.moving-cloud-1 {
+	animation: cloudAnimation 4s infinite
+		alternate ease-in-out;
+}
+.moving-cloud-2 {
+	top: 15%;
+	z-index: -1;
+	opacity: 0.6;
+	animation: cloudAnimation 3.5s
+		infinite alternate ease-in-out;
+}
+.locations-head h2 {
+	font-size: 4rem;
+}
+.locations-head h3 {
+	font-size: 2.5rem;
+	padding-top: 1rem;
+}
+@keyframes cloudAnimation {
+	from {
+		transform: translate(10%, -10%);
+	}
+	to {
+		transform: translate(0%, 0%);
+	}
+}
+/* media query */
+@media screen and (max-width: 1100px) {
+	nav {
+		text-align: center;
+	}
+	html {
+		font-size: 55%;
+	}
+	#logo {
+		padding: 1rem;
+	}
+	.cloud {
+		width: 70%;
+		height: 50%;
+	}
+}
+@media screen and (max-width: 530px) {
+	html {
+		font-size: 40%;
+	}
+	.hero {
+		padding: 2rem;
+	}
+	.locations {
+		padding: 2rem;
+	}
+	.cloud {
+		width: 90%;
+		height: 60%;
+	}
+}
