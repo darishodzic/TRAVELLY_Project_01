@@ -10,8 +10,6 @@
     <title>Travelly | Travelling Agency</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="project1_style.css">
@@ -19,7 +17,7 @@
 <body>
     <header class="main-head">
         <nav>
-            <h1 id="logo">Travelly</h1>
+            <h1 id="logo"><a href="#hero">Travelly</a></h1>
             <ul>
                 <li><a href="#locations">Locations</a></li>
                 <li><a href="#benefits">Benefits</a></li>
@@ -28,12 +26,12 @@
             </ul>
         </nav>
     </header>
-    <section class="hero">
+    <section id="hero"class="hero">
         <h2>Travel Beyond Limits.</h2>
         <h3>Start your travel an affrodable price with Travelly<br/>Contact us now bellow.</h3>
         <button>Book Now</button>    
     </section>
-    <section class="locations">
+    <section  id="locations"class="locations">
         <header class="locations-head">
             <h2>The Perfect Travelling Experience.</h2>
             <h3>We cover everything from picking the perfect hotel,<br>flight and travelling destination.</h3>
@@ -42,5 +40,59 @@
             
         </header>
     </section>
+    <section  id="benefits"class="benefits">
+        <header class="benfits-head">
+        <h2>The Perfect Travell</h2>
+        <h3>We cover all everything from picking the perfect hotel <br>to flight and destination.</h3>
+    </header>
+    <div class="cards">
+        <div class="card">
+            <div class="icon-div">
+            <i class="fas fa-route icons"></i>
+        </div>
+            <h4>Travel</h4>
+            <p>Travel in over 250 countries with no effort.</p>
+
+        </div>
+        <div class="card">
+            <div class="icon-div">
+            <i class="fas fa-bed icons"></i>
+        </div>
+            <h4>Hotel</h4>
+            <p>Hotel located near popular areas.</p>
+
+        </div>
+        <div class="card">
+            <div class="icon-div">
+            <i class="fas fa-plane-departure icons"></i>
+        </div>
+            <h4>Flight</h4>
+            <p>Flight included in every purchased trip.</p>
+
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+        <div class="form-wrapper">
+            <header class="form-head">
+                <h2>Contact Us</h2>
+            </header>
+            <form >
+                <div class="name-form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                    <div class="email-form">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        foooter
+            </footer>
+        
 </body>
 </html>
