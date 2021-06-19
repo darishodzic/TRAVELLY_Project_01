@@ -74,6 +74,9 @@ nav ul {
 	align-items: center;
 	list-style: none;
 }
+#contact_nav:active {
+	color: red;
+}
 #logo {
 	flex: 2 1 40rem;
 	font-family: "Pattaya", sans-serif;
@@ -269,9 +272,30 @@ a {
 	border-bottom-right-radius: 20px;
 }
 footer {
-	min-height: 10vh;
 	background: #131c27;
 	color: white;
+}
+.footer-wrapper {
+	min-height: 10vh;
+	padding: 2rem;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	flex-wrap: wrap;
+}
+footer h5 {
+	flex: 1 1 40rem;
+}
+footer ul {
+	display: flex;
+	list-style: none;
+	flex: 1 1 40rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-icons {
+	font-size: 3rem;
 }
 /* media query */
 @media screen and (max-width: 1100px) {
@@ -302,5 +326,11 @@ footer {
 	.cloud {
 		width: 90%;
 		height: 60%;
+	}
+	footer {
+		text-align: center;
+	}
+	.form-wrapper {
+		width: 95%;
 	}
 }

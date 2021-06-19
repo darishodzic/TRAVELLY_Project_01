@@ -19,9 +19,9 @@
         <nav>
             <h1 id="logo"><a href="#hero">Travelly</a></h1>
             <ul>
-                <li><a href="#locations">Locations</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li ><a href="#locations" id="locations_nav">Locations</a></li>
+                <li ><a href="#benefits" id="benefits_nav">Benefits</a></li>
+                <li ><a href="#contact" id="contact_nav">Contact</a></li>
 
             </ul>
         </nav>
@@ -77,13 +77,14 @@
             <header class="form-head">
                 <h2>Contact Us</h2>
             </header>
-            <form >
+            <form action="https://formspree.io/f/xoqywrdy"
+            method="POST">
                 <div class="name-form">
                     <label for="name">Name:</label>
                     <input type="text" name="name" required>
                     <div class="email-form">
                         <label for="email">Email:</label>
-                        <input type="email" name="email" required>
+                        <input type="email" name="_replayto" required>
                     </div>
                 </div>
                 <button type="submit">Submit</button>
@@ -91,8 +92,21 @@
         </div>
     </section>
     <footer>
-        foooter
-            </footer>
+        <div class="footer-wrapper">
+        <h5>Travelly &copy;</h5>
+            <ul>
+                <li>
+                    <a title="Youtube link" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube footer-icons"></i></a>
+                </li>
+                <li>
+                    <a title="Instagram link" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram footer-icons"></i></a>
+                </li>
+                <li>
+                    <a title="Facebook link" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square footer-icons"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
         
 </body>
 </html>
