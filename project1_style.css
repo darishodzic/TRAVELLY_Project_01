@@ -74,9 +74,9 @@ nav ul {
 	align-items: center;
 	list-style: none;
 }
-#contact_nav:active {
+/* #contact_nav:active {
 	color: red;
-}
+} */
 #logo {
 	flex: 2 1 40rem;
 	font-family: "Pattaya", sans-serif;
@@ -89,7 +89,7 @@ nav ul {
 			rgb(0, 0, 0, 0.5),
 			transparent
 		),
-		url(mountain_waterfall.jpg);
+		url(./img/mountain_waterfall.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -111,7 +111,7 @@ nav ul {
 			rgb(0, 0, 0, 0.5),
 			transparent
 		),
-		url(city-cut.png);
+		url(./img/city-cut.png);
 	/* background-size: cover; */
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -168,7 +168,7 @@ nav ul {
 /* Benefits section */
 .benefits {
 	height: 100vh;
-	background-image: url(pexels-daniel-jurin-1835712.jpg);
+	background-image: url(./img/pexels-daniel-jurin-1835712.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -233,7 +233,7 @@ a {
 }
 #contact {
 	min-height: 90vh;
-	background-image: url(pexels-james-wheeler-1578749.jpg);
+	background-image: url(./img/pexels-james-wheeler-1578749.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
